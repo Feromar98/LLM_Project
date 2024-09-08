@@ -1,6 +1,3 @@
-#test OpenAI API Key = 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
-# 0. Imports
-
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain_openai import ChatOpenAI
 from langchain.callbacks.streamlit import StreamlitCallbackHandler
@@ -9,9 +6,8 @@ import streamlit as st
 import pandas as pd
 
 
-
-st.set_page_config(page_title="LangChain: Chat with Pandas DataFrame", page_icon="🦜")
-st.title("🦜 LangChain: Chat with Pandas DataFrame")
+st.set_page_config(page_title="Gen AI: Analysis Tool", page_icon="🤖")
+st.title("🤖 Gen AI: Analysis Tool")
 
 def clear_submit():
     """
