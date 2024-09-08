@@ -4,6 +4,7 @@ from langchain.callbacks.streamlit import StreamlitCallbackHandler
 
 import streamlit as st
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 st.set_page_config(page_title="Gen AI: Analysis Tool", page_icon="🤖")
