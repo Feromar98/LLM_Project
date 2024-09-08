@@ -36,11 +36,8 @@ else:
 
 if "messages" not in st.session_state or st.sidebar.button("Clear conversation history"):
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
-    
-st.write(st.session_state.messages)
 
 for msg in st.session_state.messages:  
-    st.write(msg)
     st.chat_message(msg["role"]).write(msg["content"])
     
 if prompt := st.chat_input(placeholder="What is this data about?"):
